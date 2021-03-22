@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+      "/home/alex-gusev/work/video-player-iframe-api"
+    ]
+  ],
+  "_from": "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+  "_id": "zod@git+https://github.com/mad-gooze/zod.git#321372b969e5df17606537aae55a84630604f0c7",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/zod",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+    "rawSpec": "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+    "saveSpec": "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+    "fetchSpec": "https://github.com/mad-gooze/zod.git",
+    "gitCommittish": "zod-v1.11.4-gitpkg"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mad-gooze/zod.git#321372b969e5df17606537aae55a84630604f0c7",
+  "_spec": "git+https://github.com/mad-gooze/zod.git#zod-v1.11.4-gitpkg",
+  "_where": "/home/alex-gusev/work/video-player-iframe-api",
+  "author": {
+    "name": "Colin McDonnell",
+    "email": "colin@vriad.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vriad/zod/issues"
+  },
+  "dependencies": {
+    "setprototypeof": "^1.2.0"
+  },
+  "description": "TypeScript-first schema declaration and validation library with static type inference",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
+    "make-coverage-badge": "^1.2.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "3.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/vriad/zod",
+  "keywords": [
+    "typescript",
+    "schema",
+    "validation",
+    "type",
+    "inference"
+  ],
+  "license": "MIT",
+  "main": "./lib/src/index.js",
+  "name": "zod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vriad/zod.git"
+  },
+  "scripts": {
+    "badge": "make-coverage-badge --output-path ./coverage.svg",
+    "build": "yarn run clean && tsc --p tsconfig.package.json",
+    "buildall": "yarn add typescript@3.4 && yarn build && yarn add typescript@3.5 && yarn build && yarn add typescript@3.6 && yarn build && yarn add typescript@3.7 && yarn build && yarn add typescript@3.8 && yarn build && yarn add typescript@3.9 && yarn build && yarn add typescript@4 && yarn build && yarn add typescript@3.3 && yarn build",
+    "clean": "rm -rf lib/*",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "play": "nodemon -e ts -w . -x ts-node src/playground.ts",
+    "prepublishOnly": "npm run build",
+    "test": "jest --coverage && yarn run badge",
+    "testone": "jest"
+  },
+  "sideEffects": false,
+  "tags": [
+    "typescript",
+    "schema",
+    "validation",
+    "type",
+    "inference"
+  ],
+  "types": "./lib/src/index.d.ts",
+  "version": "1.11.4"
+}
