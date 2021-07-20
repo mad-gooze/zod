@@ -1,5 +1,5 @@
 {
-  "name": "zod",
+  "name": "@mad_gooze/zod",
   "version": "3.5.2-0",
   "description": "TypeScript-first schema declaration and validation library with static type inference",
   "main": "./lib/index.js",
